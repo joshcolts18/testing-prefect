@@ -23,7 +23,7 @@ Trying to implement these features from scratch is a huge pain that takes time, 
 <Frame caption="Prefect UI">![screenshot of Cloud UI timeline view with menu](/2.9.0/img/ui/flow-run-page.png)</Frame>
 
 #### New to Prefect?
-If you're ready to dive in and learn Prefect, try the [tutorial](/2.9.0/tutorial/index/) where you'll create a full data project, jump into Prefect [concepts](/2.9.0/concepts/index/), or explore the [guides](guides/index/) for common use cases. <div style="height: 10px"></div>
+If you're ready to dive in and learn Prefect, try the [tutorial](/2.9.0/tutorial/index/) where you'll create a full data project, jump into Prefect [concepts](/2.9.0/concepts/index/), or explore the [guides](guides/index/) for common use cases.
 
 [Tutorials](/2.9.0/tutorials/)\{ .md-button .md-button--primary .main-button--primary .full}  [Concepts](/2.9.0/concepts)\{ .md-button .main-button--secondary .full }  [Guides](guides)\{ .md-button .main-button--secondary .full }
 
@@ -34,11 +34,9 @@ Or, read on for a quick sample of Prefect.
 
 Install Prefect with 
 
-<div class="terminal">
 ```bash
 pip install -U prefect
 ```
-</div>
 
 See the [install guide](/2.9.0/getting-started/installation/) for more detailed instructions.
 
@@ -59,7 +57,6 @@ print(my_favorite_function())
 
 Thats it! Your function is now a flow. Run the code as you normally would, and you'll see its execution via the Prefect logs:
 
-<div class="terminal">
 ```bash
 $ python hello_prefect.py
 15:27:42.543 | INFO    | prefect.engine - Created flow run 'olive-poodle' for flow 'my-favorite-function'
@@ -68,7 +65,6 @@ What is your favorite number?
 15:27:42.652 | INFO    | Flow run 'olive-poodle' - Finished in state Completed()
 42
 ```
-</div>
 
 Prefect automatically persists all executions of your flow along with useful metadata such as start time, end time, and state. This is just the beginning, so keep exploring to learn how to add retries, notifications, scheduling and much more!
 
